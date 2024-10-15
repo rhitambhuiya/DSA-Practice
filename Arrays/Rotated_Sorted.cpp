@@ -8,13 +8,14 @@ bool check(vector<int>& nums) {
         if(nums[i-1] > nums[i])
             count++;
     if(nums[n-1] > nums[0])
-        count++;
+        count++; 
     return count <= 1;
 }
 
 int main(){
     vector<int> v;
     int input;
+    printf("Enter the array elements: ");
     while(cin>>input)
         v.push_back(input);
     if(check(v))
